@@ -116,18 +116,6 @@
 		border-bottom-color: transparent;
 		border-left-color: transparent;
 	}
-	.schedule-detail:after{
-		content: '{{date}}';
-		color: white;
-		position: absolute;
-		right: 0;
-		top: 0;
-		text-align: center;
-		font-size: 12px;
-		width: 1.2rem;
-		height: 1.2rem;
-		line-height: 1.2rem;
-	}
 	
 	.schedule-detail .text {
 		color: #fff;
@@ -153,6 +141,20 @@
 </style>
 
 <template id="company-detail">
+	<style>
+		.schedule-detail:after{
+			content: '{{date}}';
+			color: white;
+			position: absolute;
+			right: 0;
+			top: 0;
+			text-align: center;
+			font-size: 12px;
+			width: 1.2rem;
+			height: 1.2rem;
+			line-height: 1.2rem;
+		}
+	</style>
 	<div class="detail">
 		<header>
 			<div class="dots avatar" style="background-image:url('{{root}}/assets/circle.png'), url('{{root}}/assets/company/{{id}}.png')"></div>
