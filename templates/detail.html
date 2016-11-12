@@ -66,6 +66,13 @@
 		padding: 20px;
 		font-size: 15px;
 	}
+
+	.detail .topic{
+		padding: 20px 20px 0;
+		font-size: 18px;
+		color: #6676a1;
+		text-align: left; 
+	}
 	
 	.detail .url {
 		margin: 1rem auto 0;
@@ -147,9 +154,11 @@
 			<div class="dots avatar" style="background-image:url('{{root}}/assets/circle.png'), url('{{root}}/assets/company/{{id}}.png')"></div>
 			<div class="desc">
 				<div class="name">{{name}}</div>
+				<div class="subname">{{topic}}</div>
 			</div>
 		</header>
 		<div class="dots">
+			<div class="topic">{{comp}}</div>
 			<div class="text">{{desc}}</div>
 			<a href="{{url}}" target="_blank" class="url">官方网站</a>
 		</div>
