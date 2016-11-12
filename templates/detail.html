@@ -137,24 +137,11 @@
 	.contents .text{
 		padding: 1rem 0;
 		border-bottom: 2px solid #e38f2a;
+		margin-bottom: 1rem;
 	}
 </style>
 
 <template id="company-detail">
-	<style>
-		.schedule-detail:after{
-			content: '{{date}}';
-			color: white;
-			position: absolute;
-			right: 0;
-			top: 0;
-			text-align: center;
-			font-size: 12px;
-			width: 1.2rem;
-			height: 1.2rem;
-			line-height: 1.2rem;
-		}
-	</style>
 	<div class="detail">
 		<header>
 			<div class="dots avatar" style="background-image:url('{{root}}/assets/circle.png'), url('{{root}}/assets/company/{{id}}.png')"></div>
@@ -200,13 +187,43 @@
 		.contents{
 			background: #fff;
 			text-align: left;
-			padding: 0 2rem;
+			padding: 0 2rem 1rem;
+		}
+		.schedule-detail:after{
+			content: '{{date}}';
+			color: white;
+			position: absolute;
+			right: 0;
+			top: 0;
+			text-align: center;
+			font-size: 12px;
+			width: 1.2rem;
+			height: 1.2rem;
+			line-height: 1.2rem;
+		}
+		.sclink{
+			margin: 1rem auto 0;
+		    text-align: center;
+		    padding: 15px;
+		    text-decoration: none;
+		    color: white;
+		    font-size: 17px;
+		    line-height: 17px;
+		    font-weight: bold;
+		    background: #6676a1;
+		    width: 125px;
+		    border-radius: 30px;
+		    display: none;
+		}
+		.schedule-detail .text:first-line{
+			font-size: 14px;
+			line-height: 1.5;
 		}
 	</style>
 	<div class="detail">
 		<div class="schedule-detail green" style="background-image: url('{{root}}/assets/schedule/{{pic}}')">
 			<div class='text'>
-				{{name}}
+				{{topic}}：<br>{{name}}
 			</div>
 		</div>
 		<div class="contents">
@@ -214,10 +231,16 @@
 				{{desc}}
 			</div>
 			<div class="time">
-				时间：{{start_time}}-{{end_time}}
+				时间：2016年11月{{date}}日 {{start_time}}-{{end_time}}<br>
 			</div>
+			<a href="{{href}}" class="sclink">项目介绍</a>
 		</div>
 		<div data-speakers="{{speakers}}" class="schedule-speaker-container">
 		</div>
 	</div>
+	<script>
+		if(!/undifined|null|NaN/.test('{{href}}')){
+			$$$('.sclink').css('display','block');
+		}
+	</script>
 </define>
