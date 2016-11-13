@@ -161,8 +161,8 @@
             function str_md5(s) { return binl2str(core_md5(str2binl(s), s.length * chrsz)); }
             function callWechatBrowser() {
                 var timestamp = Date.parse(new Date());
-                var sign = md5("wxe6c0021af5b44cc1" + "user" + timestamp + "2500980" + "http://wifi.weixin.qq.com/assistant/wifigw/auth.xhtml?httpCode=200" + "aa:aa:aa:aa:aa:aa" + "GEW-CHINA" + "1e66125600702606027ff6fefec2fbab");
-                Wechat_GotoRedirect('wxe6c0021af5b44cc1', 'user', timestamp, sign, '2500980', 'http://wifi.weixin.qq.com/assistant/wifigw/auth.xhtml?httpCode=200', 'aa:aa:aa:aa:aa:aa', 'GEW-CHINA');
+                var sign = md5("wxe6c0021af5b44cc1" + "user" + timestamp + "2500980" + "http://wifi.weixin.qq.com/assistant/wifigw/auth.xhtml?httpCode=200" + "aa:aa:aa:aa:aa:aa" + " GEW-CHINA" + "1e66125600702606027ff6fefec2fbab");
+                Wechat_GotoRedirect('wxe6c0021af5b44cc1', 'user', timestamp, sign, '2500980', 'http://wifi.weixin.qq.com/assistant/wifigw/auth.xhtml?httpCode=200', 'aa:aa:aa:aa:aa:aa', ' GEW-CHINA');
             }
         </script>
 
