@@ -1,4 +1,4 @@
-var edgeroot = 'http://localhost';
+var edgeroot = 'http://wifi.lan';
 window.edgeroot = edgeroot;
 window.projroot = edgeroot + "/";
 
