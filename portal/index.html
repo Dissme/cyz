@@ -74,7 +74,7 @@
             font-size: 20px;
             line-height: 40px;
             height: 40px;
-            font-weight: bold;
+            font-weight: 500;
             border-radius: 30px;
         }
     </style>
@@ -161,8 +161,8 @@
             function str_md5(s) { return binl2str(core_md5(str2binl(s), s.length * chrsz)); }
             function callWechatBrowser() {
                 var timestamp = Date.parse(new Date());
-                var sign = md5("wxdf0fb3991213cca1" + "user" + timestamp + "2556934" + "http://wifi.weixin.qq.com/assistant/wifigw/auth.xhtml?httpCode=200" + "aa:aa:aa:aa:aa:aa" + "TechCrunch 2016 Beijing" + "16b73e626db55c83c41141cd3d24a2ac");
-                Wechat_GotoRedirect('wxdf0fb3991213cca1', 'user', timestamp, sign, '2556934', 'http://wifi.weixin.qq.com/assistant/wifigw/auth.xhtml?httpCode=200', 'aa:aa:aa:aa:aa:aa', 'TechCrunch 2016 Beijing');
+                var sign = md5("wxe6c0021af5b44cc1" + "user" + timestamp + "2500980" + "http://wifi.weixin.qq.com/assistant/wifigw/auth.xhtml?httpCode=200" + "aa:aa:aa:aa:aa:aa" + "GEW-CHINA" + "1e66125600702606027ff6fefec2fbab");
+                Wechat_GotoRedirect('wxdf0fb3991213cca1', 'user', timestamp, sign, '2500980', 'http://wifi.weixin.qq.com/assistant/wifigw/auth.xhtml?httpCode=200', 'aa:aa:aa:aa:aa:aa', 'GEW-CHINA');
             }
         </script>
 
