@@ -44,7 +44,6 @@
             top: 10px;
             background: url('./close.png') no-repeat 0 0;
             background-size: 100% 100%;
-            display: none;
         }
 
         .count{
@@ -75,10 +74,8 @@
             font-size: 20px;
             line-height: 40px;
             height: 40px;
-            font-weight: 500;
+            font-weight: bold;
             border-radius: 30px;
-            display: block;
-            text-decoration: none;
         }
     </style>
     <div class="adpage">
@@ -87,9 +84,9 @@
     </div>
 
     <div class="bg" style="opacity: .5">
-        <a href="http://wifi.lan" target="_blank" class="button">
+        <div onclick="callWechatBrowser()" class="button">
             进入会场
-        </a>
+        </div>
     </div>
 
     <script>
