@@ -53,7 +53,6 @@ window.$$$wrap$$$ = function () {
         res.push("templates/contentPage.html");
     }
 
-    
 
     edge.deploy(projroot, res, function () {
         hookSuggestion();

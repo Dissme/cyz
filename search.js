@@ -1,5 +1,4 @@
 window.$$$wrap$$$ = function () {
-
     //deal with all sch data
     for (var i in $$$edgeData$$$) {
         for(var j in $$$edgeData$$$[i]) {

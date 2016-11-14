@@ -81,11 +81,11 @@ function loadZepto() {
 
     function edge_load(target, cb) {
         var cb = cb || function () { };
-        if (target.toLowerCase().endsWith(".json")) {
+        if (/.json$/.test(target.toLowerCase())) {
             var t = target.split("/").pop().replace(/\.json$/, '');
             $.get(target, function (data) {
                 var dt;
-                if(data instanceof String) {
+                if(typeof data == "string") {
                     try{
                         dt = JSON.parse(data);
                     } catch(e) {

@@ -1,4 +1,5 @@
-var edgeroot = 'http://wifi.lan';
+// var edgeroot = 'http://wifi.lan';
+var edgeroot = 'http://192.168.1.9:80/'
 window.edgeroot = edgeroot;
 window.projroot = edgeroot + "/";
 
@@ -16,4 +17,3 @@ window.$Edge = {
     ],
     init: [edgeroot + '/main.js']
 };
-
