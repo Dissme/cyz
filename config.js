@@ -1,5 +1,5 @@
-// var edgeroot = 'http://wifi.lan';
-var edgeroot = 'http://192.168.1.9:80/'
+var edgeroot = 'http://wifi.lan';
+// var edgeroot = 'http://192.168.1.9/'
 window.edgeroot = edgeroot;
 window.projroot = edgeroot + "/";
 
