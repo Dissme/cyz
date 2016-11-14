@@ -8,6 +8,16 @@
 
 <inject appendTo="#outerlayer">
 	<style>
+		#outerlayer{
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 100%;
+			width: 100%;
+			overflow: auto;
+		}
 		.bgHolder {
 			position: fixed;
 			top: 0;
@@ -17,15 +27,12 @@
 		}
 		
 		.main {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
+			position: relative;
 			color: white;
 			text-align: center;
 			padding-top: 35%;
 		    height: 100%;
+		    width: 100%;
 			box-sizing: border-box;
 		}
 		
