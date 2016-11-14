@@ -19,11 +19,32 @@
 			z-index: 0;
 			overflow: hidden;
 		}
+
+		.header .logo_contain{
+			width: 180px;
+			height: 33px;
+			margin: 1rem auto;
+			text-align: center;
+			line-height: 33px;
+			font-size: 0;
+		}
+
+		.header .logo1{
+			width: 76px;
+			height: 33px;
+			display: inline-block;
+			margin-right: 10px;
+		}
+
+		.header .logo2{
+			width: 89px;
+			height: 22px;
+			display: inline-block;
+		}
 		
 		.header .display {
 			z-index: 1;
 			position: relative;
-			padding-top: 80px;
 		}
 		
 		.logo {
@@ -57,6 +78,10 @@
 			<template id="bg2" />
 		</div>
 		<div class="display">
+			<div class="logo_contain">
+				<img src="{{root}}/assets/logo1.png" class="logo1"/>
+				<img src="{{root}}/assets/logo2.png" class="logo2"/>
+			</div>
 			<template id="searchbar" />
 		</div>
 		<template id="entries" />

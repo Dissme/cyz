@@ -30,10 +30,33 @@
 			position: relative;
 			color: white;
 			text-align: center;
-			padding-top: 35%;
 		    height: 100%;
 		    width: 100%;
 			box-sizing: border-box;
+			-webkit-box-sizing:border-box; /* Safari */
+			overflow: hidden;
+		}
+
+		.main .logo_contain{
+			width: 180px;
+			height: 33px;
+			margin: 2rem auto;
+			text-align: center;
+			line-height: 33px;
+			font-size: 0;
+		}
+
+		.main .logo1{
+			width: 76px;
+			height: 33px;
+			display: inline-block;
+			margin-right: 10px;
+		}
+
+		.main .logo2{
+			width: 89px;
+			height: 22px;
+			display: inline-block;
 		}
 		
 		.main h1 {
@@ -103,6 +126,10 @@
 		<template id="bg" />
 	</div>
 	<div class="main">
+		<div class="logo_contain">
+			<img src="{{root}}/assets/logo1.png" class="logo1"/>
+			<img src="{{root}}/assets/logo2.png" class="logo2"/>
+		</div>
 		<h1><span style="font-family: Arial;font-size: 20px;">2016(第10届)</span><br>创业周暨全球创业周中国站<br><span style="font-family: Arial;font-size: 12px;">2016 GLOBAL ENTREPRENEURSHIP WEEK CHINA</span></h1>
 		<template id="searchbar" />
 		<div class="schedule_board dots">
